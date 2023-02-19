@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Duck Game Wiki</title>
+		<link rel="icon" type="images/icon.ico" href="images/icon.ico">
+	</head>
+	<body>
+		
+		<div class="title animate-fading">
+			<TitleThing>
+				<button class="goodButton" onclick="themeToggle()">[duck game]<sub><sub>wiki</sub></sub></button>
+			</TitleThing>
+		</div>
+
+		<div class="page">
+
+			<script>
+				function themeToggle() {
+					var element = document.body;
+					element.classList.toggle("light-mode");
+				}
+			</script>
+
+
+
+			<p> But the lord laughs at the wicked, </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+			<p> for he knows their day is coming. </p>
+
+		</div>
+</body>
+<style>
+	
+	:root {
+		background-image:url('images/city_background.gif');
+		background-repeat: repeat-x;
+		background-color: rgb( 15, 15, 15);
+	}
+
+	.page {
+		margin: auto;
+		width: 60%;
+		padding: 10px;
+		position: relative;
+		top:50px;
+		color:white;
+		font-size: 100%;
+		position: relative;
+		top: 330px;
+	}
+	
+
+	.animate-fading {
+		animation: fading 3s
+	}
+	@keyframes fading {
+		0%{opacity:0}
+		100%{opacity:1}
+	}
+
+	.title {
+		margin: auto;
+		width: 90%;
+		padding: 10px;
+		text-align: center;
+		font-size: 350%;
+		position: absolute;
+		top: 120px;
+	}
+
+
+	.goodButton {
+		border: none;
+		background-color: inherit;
+		color: inherit;
+		font: inherit;
+		font-size: inherit;
+		padding: 1px 1px;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	.light-mode {
+		background-image:url('images/office-background.gif');
+		background-color: #E6C594;
+		color: black;
+	}
+
+	@font-face {
+		font-family: AdultSwim;
+		src: url('fonts/AdultSwimFont.ttf');
+	}
+
+	TitleThing {
+		font-family: AdultSwim;
+		text-align: center;
+		color: white;
+	}
+</style>
+</html>
