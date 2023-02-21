@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Duck Game Wiki | Pistol</title>
+		<link rel="icon" type="/images/icon.ico" href="/images/icon.ico">
+	</head>
+<body>
+	<script>
+		function themeToggle() {
+			var element = document.body;
+			element.classList.toggle("light-mode");
+		}
+	</script>
+
+	<div class="header">
+		<a href="/">[duck game] <sub><sub>wiki</sub></sub></a>
+	</div>
+
+	<div class="title">
+		<TitleThing>Pistol</TitleThing>
+	</div>
+	<div class="frame">
+		<img src="/images/arcadeframe.png">
+		<video autoplay loop muted playsinline width="1980" height="720">
+			<source src="/videos/Pistol.mp4" type="video/mp4" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+
+	<div class="info">
+		<p>The Pistol is one of the most common and versatile weapons in Duck Game. Possessing average stats in every category makes the pistol effective on nearly every map. Many maps, especially pyramid maps have a pistol in them as a standard weapon. The recoil is manageable but may cause accidental deaths when spamming near edges. </p>
+	</div>
+
+	<div class="tooltip">
+		<p><i>Your average everyday pistol. Just workin' to keep its kids fed, never bothered nobody.</i></p>
+	</div>
+
+	<div class="page">
+		<div class="ItemProperty">
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Pistols</a></span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Ammo Type</span> <span class="propertyValue">9mm</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Spread</span> <span class="propertyValue">0.75</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Direction</span> <span class="propertyValue">Forward</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Range</span> <span class="propertyValue">15.625 Tiles</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
+		</div>
+	</div>
+</body>
+
+<style>
+@font-face {
+	font-family: AdultSwim;
+	src: url('/fonts/AdultSwimFont.ttf');
+}
+
+:root {		
+	background-color: rgb(15, 15, 15);
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background-image: url('/images/DuckChannel.gif');
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+.header a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: AdultSwim;
+	margin-top: 5px;
+	margin-left: 25px;
+	color: white;
+}
+
+.page {
+	width: 35%;
+	padding: 10px;
+	position: relative;
+	color:white;
+	position: relative;
+	top: 540px;
+	left: 14px;
+}
+.ItemProperty {
+	display: flex;
+	gap: 100px;
+	font-size: 18px;
+	font-family: Consolas;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	border-bottom: 1px solid rgb(30, 30, 30);
+}
+.propertyName {
+	width: 250px;
+}
+.propertyValue a {
+	text-decoration: none;
+	color: white;
+}
+
+.info {
+	position: absolute;
+	top: 330px;
+	left: 50px;
+	width: 53%;
+	font-size: 20px;
+	font-family: Consolas;
+	color: white;
+}
+
+.tooltip {
+	color: rgb(180, 180, 180);
+	font-size: 20px;
+	font-family: Consolas;
+	position: absolute;
+	top: 625px;
+	left: 1070px;
+	width: 43%;
+	text-align: center;
+}
+
+.animate-fading {
+	animation:fading 3s
+}
+
+@keyframes fading {
+	0% {opacity:0}
+	100% {opacity:1}
+}
+
+.title {
+	padding-left: 45px;
+	margin: auto;
+	width: 90%;
+	font-size: 350%;
+	position: absolute;
+	top: 200px;
+}
+
+.frame {
+	position: absolute;
+	left: 920px;
+	top: 0px;
+	scale: 0.70;
+}
+
+.frame img {
+	width: 1132px;
+	height: 720px;
+}
+.frame video {
+	position: absolute;
+	left: 48.5px;
+	bottom: 116.6px;
+	width: 1000px;
+	height: 529px;
+	background-image: url("/videos/Pistol.mp4");
+	background-size: cover;
+}
+
+.goodButton {
+	border: none;
+	background-color: inherit;
+	color: inherit;
+	font: inherit;
+	font-size: inherit;
+	padding: 1px 1px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.light-mode {
+	background-image:url('/images/office-background.gif');
+	background-color: #E6C594;
+	color: black;
+}
+
+TitleThing {
+	font-family: AdultSwim;
+	text-align: center;
+	color: white;
+}
+</style>
+</html>
