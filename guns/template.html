@@ -56,6 +56,10 @@
 			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
 		</div>
 	</div>
+
+	<div class="bugs">
+		<span class="bugs-title">Bugs</span><p>[ONLINE] Dropping the cluster right before firing the last peel will drop more bananas equal to the players in the lobby minus local players</p>
+	</div>
 </body>
 
 <style>
@@ -68,7 +72,6 @@
 	background-color: rgb(15, 15, 15);
 	margin: 0;
 	height: 100%;
-	overflow: hidden;
 	background-image: url('/images/DuckChannel.gif');
 	background-repeat: repeat-x;
 	background-position: center top;
@@ -83,13 +86,20 @@
 	color: white;
 }
 
+.title {
+	left: 5vh;
+	margin: auto;
+	font-size: 550%;
+	position: absolute;
+	top: 165px;
+}
 .page {
-	width: 35%;
+	width: 25%;
 	padding: 10px;
 	position: relative;
 	color:white;
 	position: relative;
-	top: 540px;
+	top: 525px;
 	left: 14px;
 }
 .ItemProperty {
@@ -103,7 +113,7 @@
 	border-bottom: 1px solid rgb(30, 30, 30);
 }
 .propertyName {
-	width: 250px;
+	width: 150px;
 }
 .propertyValue a {
 	text-decoration: none;
@@ -115,7 +125,7 @@
 	top: 330px;
 	left: 5vh;
 	width: 53%;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Consolas;
 	color: white;
 }
@@ -131,12 +141,26 @@
 	text-align: center;
 }
 
-.title {
-	left: 5vh;
-	margin: auto;
-	font-size: 550%;
+.bugs-title {
+	border-bottom: 1px solid rgb(30, 30, 30);
+	text-align: left;
+	padding-right: 94%;
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.bugs {
+	color: white;
+	font-size: 18px;
+	font-family: Consolas;
 	position: absolute;
-	top: 165px;
+	top: 830px;
+	left: 1090px;
+	width: 40%;
+	text-align: left;
+}
+.bugs p {
+	padding-left: 30px;
+	padding-top: 5px;
 }
 
 .frame {
