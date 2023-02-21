@@ -6,6 +6,12 @@
 		<link rel="icon" type="images/icon.ico" href="images/icon.ico">
 	</head>
 	<body>
+		<script>
+			function themeToggle() {
+				var element = document.body;
+				element.classList.toggle("light-mode");
+			}
+		</script>
 		
 		<div class="title animate-fading">
 			<TitleThing>
@@ -14,62 +20,45 @@
 		</div>
 
 		<div class="page">
-
-			<script>
-				function themeToggle() {
-					var element = document.body;
-					element.classList.toggle("light-mode");
-				}
-			</script>
-
-
-
-			<p> But the lord laughs at the wicked, </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-			<p> for he knows their day is coming. </p>
-
+			<div class="container">
+				<img src="images/sob4k.webp" width="200">
+			</div>
+			<div class="container">
+				<img src="images/sob4k.webp" width="200">
+			</div>
+			<div class="container">
+				<img src="images/sob4k.webp" width="200">
+			</div>
+			<div class="container">
+				<img src="images/sob4k.webp" width="200">
+			</div>
+			<div class="container">
+				<img src="images/sob4k.webp" width="200">
+			</div>
 		</div>
 </body>
 <style>
-	
-	:root {
+	.light-mode {
+		background-image:url('images/office-background.gif');
+		background-color: #933B24;
+		color: black;
+	}
+	body {
 		background-image:url('images/city_background.gif');
 		background-repeat: repeat-x;
-		background-color: rgb( 15, 15, 15);
+		background-color: black;
 	}
 
 	.page {
-		margin: auto;
-		width: 60%;
-		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		top: 340px;
+		margin: 50px;
 		position: relative;
-		top:50px;
-		color:white;
-		font-size: 100%;
-		position: relative;
-		top: 330px;
+		justify-content: space-around;
 	}
 	
-
 	.animate-fading {
 		animation: fading 3s
 	}
@@ -81,13 +70,12 @@
 	.title {
 		margin: auto;
 		width: 90%;
-		padding: 10px;
+		padding: 30px;
 		text-align: center;
 		font-size: 350%;
 		position: absolute;
 		top: 120px;
 	}
-
 
 	.goodButton {
 		border: none;
@@ -98,12 +86,6 @@
 		padding: 1px 1px;
 		cursor: pointer;
 		display: inline-block;
-	}
-
-	.light-mode {
-		background-image:url('images/office-background.gif');
-		background-color: #E6C594;
-		color: black;
 	}
 
 	@font-face {

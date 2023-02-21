@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Duck Game Wiki | Pistol</title>
+    <link rel="icon" type="images/icon.ico" href="images/icon.ico">
+</head>
+<body>
+    <div class="title animate-fading">
+        <TitleThing>
+            <button class="goodButton" onclick="themeToggle()">[duck game]<sub><sub>wiki</sub></sub></button>
+        </TitleThing>
+    </div>
+
+</body>
+<style>
+    @font-face {
+	font-family: AdultSwim;
+	src: url('fonts/AdultSwimFont.ttf');
+}
+
+:root {
+	background-image:url('images/city_background.gif');
+	background-repeat: repeat-x;
+	background-color: rgb( 15, 15, 15);
+}
+.header a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: AdultSwim;
+	margin-top: 5px;
+	margin-left: 25px;
+	color: white;
+}
+.animate-fading {
+    animation: fading 3s
+}
+@keyframes fading {
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.title {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    font-size: 350%;
+    position: absolute;
+    top: 120px;
+}
+TitleThing {
+    font-family: AdultSwim;
+    text-align: center;
+    color: white;
+}
+.goodButton {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    font: inherit;
+    font-size: inherit;
+    padding: 1px 1px;
+    cursor: pointer;
+    display: inline-block;
+}
+</style>
+</html>

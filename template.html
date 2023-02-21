@@ -28,37 +28,39 @@
 			Your browser does not support the video tag.
 		</video>
 	</div>
+
+	<div class="info">
+		<p>The Pistol is one of the most common and versatile weapons in Duck Game. Possessing average stats in every category makes the pistol effective on nearly every map. Many maps, especially pyramid maps have a pistol in them as a standard weapon. The recoil is manageable but may cause accidental deaths when spamming near edges. </p>
+	</div>
+
 	<div class="tooltip">
 		<p><i>Your average everyday pistol. Just workin' to keep its kids fed, never bothered nobody.</i></p>
 	</div>
 
 	<div class="page">
 		<div class="ItemProperty">
-			<span class="propertyName">Type</span> <span class="propertyValue"><a>Gun</a></span>
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Gun</a></span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Ammo Type</span> <span class="propertyValue">9mm</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
+			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Spread</span> <span class="propertyValue">0.75</span>
+		</div>
+		<div class="ItemProperty">
+			<span class="propertyName">Direction</span> <span class="propertyValue">Forward</span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Range</span> <span class="propertyValue">15.625 Tiles</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Kick Force</span> <span class="propertyValue">3</span>
+			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Accuracy</span> <span class="propertyValue">0.75</span>
-		</div>
-		<div class="ItemProperty">
-			<span class="propertyName">Penetration</span> <span class="propertyValue">1</span>
-		</div>
-		<div class="ItemProperty">
-			<span class="propertyName">Full Auto</span> <span class="propertyValue">No</span>
-		</div>
-		<div class="ItemProperty">
-			<span class="propertyName">Fire Wait</span> <span class="propertyValue">1</span>
+			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
 		</div>
 	</div>
 </body>
@@ -89,19 +91,18 @@
 }
 
 .page {
-	margin: 2vw;
-	width: 40%;
+	width: 35%;
 	padding: 10px;
 	position: relative;
 	color:white;
-	font-size: 100%;
 	position: relative;
-	top: 260px;
+	top: 540px;
+	left: 14px;
 }
 .ItemProperty {
 	display: flex;
 	gap: 100px;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Consolas;
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -109,10 +110,20 @@
 	border-bottom: 1px solid rgb(30, 30, 30);
 }
 .propertyName {
-	width: 200px;
+	width: 250px;
 }
 .propertyValue a {
 	text-decoration: none;
+	color: white;
+}
+
+.info {
+	position: absolute;
+	top: 330px;
+	left: 50px;
+	width: 53%;
+	font-size: 20px;
+	font-family: Consolas;
 	color: white;
 }
 
@@ -122,8 +133,8 @@
 	font-family: Consolas;
 	position: absolute;
 	top: 625px;
-	left: 1025px;
-	width: 45%;
+	left: 1070px;
+	width: 43%;
 	text-align: center;
 }
 
@@ -137,7 +148,7 @@
 }
 
 .title {
-	padding: 20px;
+	padding-left: 45px;
 	margin: auto;
 	width: 90%;
 	font-size: 350%;
@@ -147,9 +158,9 @@
 
 .frame {
 	position: absolute;
-	left: 880px;
+	left: 920px;
 	top: 0px;
-	scale: 0.75;
+	scale: 0.70;
 }
 
 .frame img {
@@ -159,7 +170,7 @@
 .frame video {
 	position: absolute;
 	left: 48.5px;
-	bottom: 117.3px;
+	bottom: 116.6px;
 	width: 1000px;
 	height: 529px;
 	background-image: url("videos/pistol.mp4");
