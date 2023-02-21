@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Duck Game Wiki | Pistol</title>
+		<title>Duck Game Wiki | Banana Cluster</title>
 		<link rel="icon" type="image/icon" href="/images/icon.ico">
 	</head>
 <body>
@@ -12,49 +12,53 @@
 	</div>
 
 	<div class="title">
-		<TitleThing>Pistol</TitleThing>
+		<TitleThing>Banana Cluster</TitleThing>
 	</div>
 	<div class="frame">
 		<img src="/images/arcadeframe.png">
 		<video autoplay loop muted playsinline width="1980" height="720">
-			<source src="/videos/Pistol.mp4" type="video/mp4" />
+			<source src="/videos/BananaCluster.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
 
 	<div class="info">
-		<p>The Pistol is one of the most common and versatile weapons in Duck Game. Possessing average stats in every category makes the pistol effective on nearly every map. Many maps, especially pyramid maps have a pistol in them as a standard weapon. The recoil is manageable but may cause accidental deaths when spamming near edges.</p>
+		<p>Unlike the banana, the Banana Cluster leaves banana peels on the stage with every trigger press. Banana Clusters bounce like grenades when thrown and once 3 banana peels are fired, it will disappear. That said, If a player drops a banana cluster with one banana left on the cluster, it will turn into two normal bananas. So each cluster can potentially fire 4 banana peels. <br> <br> When a player runs over a banana peel on the ground they will slip in the direction they were running, ragdolling them in the process. Because of this, banana peels are best placed where an enemy player may slip to their death. Sliding over a banana peel or jumping along them will not cause a player to slip. Using a joystick in order to walk very slowly will also prevent slipping, but this isn't as practical and takes more effort. </p>
 	</div>
 
 	<div class="tooltip">
-		<p><i>Your average everyday pistol. Just workin' to keep its kids fed, never bothered nobody. <br> <br> Old faithful, the 9MM pistol.</i></p>
+		<p><i>Need more than one banana? Have I got news for you...</i></p>
 	</div>
 
 	<div class="page">
 		<div class="ItemProperty">
-			<span class="propertyName">Category</span> <span class="propertyValue"><a>Pistols</a></span>
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Explosives</a></span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Bullet</span>
+			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Banana Peel</span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi-Automatic</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Spread</span> <span class="propertyValue">Low</span>
+			<span class="propertyName">Spread</span> <span class="propertyValue">Variable</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Direction</span> <span class="propertyValue">Straight</span>
+			<span class="propertyName">Direction</span> <span class="propertyValue">Variable</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Range</span> <span class="propertyValue">16 tiles</span>
+			<span class="propertyName">Range</span> <span class="propertyValue">1/5 tiles</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
+			<span class="propertyName">Capacity</span> <span class="propertyValue">3(4)</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
+			<span class="propertyName">Console Name</span> <span class="propertyValue">bananacluster</span>
 		</div>
+	</div>
+
+	<div class="bugs">
+		<p class="bugs-title">Bugs</p><p>[ONLINE] Dropping the cluster right before firing the last peel will drop more bananas equal to the players in the lobby minus local players.</p>
 	</div>
 </body>
 
@@ -90,7 +94,7 @@
 	top: 180px;
 }
 .page {
-	width: 30%;
+	width: 25%;
 	padding: 10px;
 	position: relative;
 	color:white;
@@ -135,6 +139,27 @@
 	left: 1070px;
 	width: 43%;
 	text-align: center;
+}
+
+.bugs-title {
+	border-bottom: 1px solid rgb(30, 30, 30);
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.bugs {
+	color: white;
+	font-size: 18px;
+	font-family: Consolas;
+	position: absolute;
+	top: 780px;
+	left: 1090px;
+	width: 41%;
+	text-align: center;
+}
+.bugs p {
+	padding-top: 5px;
 }
 
 .frame {

@@ -3,64 +3,57 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Duck Game Wiki | Banana</title>
-		<link rel="icon" type="/images/icon.ico" href="/images/icon.ico">
+		<title>Duck Game Wiki | SMG</title>
+		<link rel="icon" type="image/icon" href="/images/icon.ico">
 	</head>
 <body>
-	<script>
-		function themeToggle() {
-			var element = document.body;
-			element.classList.toggle("light-mode");
-		}
-	</script>
-
 	<div class="header">
 		<a href="/">[duck game] <sub><sub>wiki</sub></sub></a>
 	</div>
 
 	<div class="title">
-		<TitleThing>Banana</TitleThing>
+		<TitleThing>SMG</TitleThing>
 	</div>
 	<div class="frame">
 		<img src="/images/arcadeframe.png">
 		<video autoplay loop muted playsinline width="1980" height="720">
-			<source src="/videos/Banana.mp4" type="video/mp4" />
+			<source src="/videos/SMG.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
 
 	<div class="info">
-		<p>The Banana is a trap which is left on the ground for a player to slip on. Unlike the Banana Cluster the banana must be eaten with the fire button then thrown similar to a Grenade. When a player runs over a banana peel on the ground they will slip in the direction they were running, ragdolling them in the process. Banana peels are best placed where a player might slip into a dangerous area. </p>
+		<p>The SMG is an uncommon weapon on official maps, akin to a less powerful AK-47. Automatic fire and high spread make the SMG a solid choice for close-quarters combat, but its short range makes it undesirable compared to weapons such as the Pistol. The SMG is modeled after the common MP5 sub machine gun.</p>
 	</div>
 
 	<div class="tooltip">
-		<p><i>A tactically placed banana peel can cause major injuries.</i></p>
+		<p><i>Rapid-fire bullet-spitting machine. Great for making artisanal swiss cheese.</i></p>
 	</div>
 
 	<div class="page">
 		<div class="ItemProperty">
-			<span class="propertyName">Category</span> <span class="propertyValue"><a>Explosives</a></span>
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Machine Guns</a></span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Banana</span>
+			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Bullet</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi</span>
+			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Automatic</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Spread</span> <span class="propertyValue">None</span>
+			<span class="propertyName">Spread</span> <span class="propertyValue">High</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Direction</span> <span class="propertyValue">Throw Dependent</span>
+			<span class="propertyName">Direction</span> <span class="propertyValue">Straight</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Range</span> <span class="propertyValue">1/9 tiles</span>
+			<span class="propertyName">Range</span> <span class="propertyValue">8 tiles</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Capacity</span> <span class="propertyValue">1</span>
+			<span class="propertyName">Capacity</span> <span class="propertyValue">30</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Console Name</span> <span class="propertyValue">banana</span>
+			<span class="propertyName">Console Name</span> <span class="propertyValue">smg</span>
 		</div>
 	</div>
 </body>
@@ -75,7 +68,6 @@
 	background-color: rgb(15, 15, 15);
 	margin: 0;
 	height: 100%;
-	overflow: hidden;
 	background-image: url('/images/DuckChannel.gif');
 	background-repeat: repeat-x;
 	background-position: center top;
@@ -90,13 +82,20 @@
 	color: white;
 }
 
+.title {
+	left: 5vh;
+	margin: auto;
+	font-size: 550%;
+	position: absolute;
+	top: 180px;
+}
 .page {
-	width: 35%;
+	width: 30%;
 	padding: 10px;
 	position: relative;
 	color:white;
 	position: relative;
-	top: 540px;
+	top: 550px;
 	left: 14px;
 }
 .ItemProperty {
@@ -110,7 +109,7 @@
 	border-bottom: 1px solid rgb(30, 30, 30);
 }
 .propertyName {
-	width: 250px;
+	width: 150px;
 }
 .propertyValue a {
 	text-decoration: none;
@@ -120,9 +119,9 @@
 .info {
 	position: absolute;
 	top: 330px;
-	left: 50px;
+	left: 5vh;
 	width: 53%;
-	font-size: 20px;
+	font-size: 18px;
 	font-family: Consolas;
 	color: white;
 }
@@ -136,24 +135,6 @@
 	left: 1070px;
 	width: 43%;
 	text-align: center;
-}
-
-.animate-fading {
-	animation:fading 3s
-}
-
-@keyframes fading {
-	0% {opacity:0}
-	100% {opacity:1}
-}
-
-.title {
-	padding-left: 45px;
-	margin: auto;
-	width: 90%;
-	font-size: 350%;
-	position: absolute;
-	top: 200px;
 }
 
 .frame {
@@ -173,25 +154,8 @@
 	bottom: 116.6px;
 	width: 1000px;
 	height: 529px;
-	background-image: url("/videos/Pistol.mp4");
+	background-image: url("/videos/pistol.mp4");
 	background-size: cover;
-}
-
-.goodButton {
-	border: none;
-	background-color: inherit;
-	color: inherit;
-	font: inherit;
-	font-size: inherit;
-	padding: 1px 1px;
-	cursor: pointer;
-	display: inline-block;
-}
-
-.light-mode {
-	background-image:url('/images/office-background.gif');
-	background-color: #E6C594;
-	color: black;
 }
 
 TitleThing {

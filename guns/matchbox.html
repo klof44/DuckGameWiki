@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Duck Game Wiki | Pistol</title>
+		<title>Duck Game Wiki | Matchbox</title>
 		<link rel="icon" type="image/icon" href="/images/icon.ico">
 	</head>
 <body>
@@ -12,49 +12,53 @@
 	</div>
 
 	<div class="title">
-		<TitleThing>Pistol</TitleThing>
+		<TitleThing>Matchbox</TitleThing>
 	</div>
 	<div class="frame">
 		<img src="/images/arcadeframe.png">
 		<video autoplay loop muted playsinline width="1980" height="720">
-			<source src="/videos/Pistol.mp4" type="video/mp4" />
+			<source src="/videos/Matchbox.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
 
 	<div class="info">
-		<p>The Pistol is one of the most common and versatile weapons in Duck Game. Possessing average stats in every category makes the pistol effective on nearly every map. Many maps, especially pyramid maps have a pistol in them as a standard weapon. The recoil is manageable but may cause accidental deaths when spamming near edges.</p>
+		<p>The Matchbox is an ineffective flame weapon found mostly in random item boxes and presents. <br> <br> A small flame is shot out when the fire button is pressed, if this flame hits another player they are set ablaze. <br> <br> Sometimes the matchbox will release two flames for a single button press. When heated up the matchbox will explode into 5 fire particles fired randomly. </p>
 	</div>
 
 	<div class="tooltip">
-		<p><i>Your average everyday pistol. Just workin' to keep its kids fed, never bothered nobody. <br> <br> Old faithful, the 9MM pistol.</i></p>
+		<p><i>A box full of fire sticks. Keep away from children.</i></p>
 	</div>
 
 	<div class="page">
 		<div class="ItemProperty">
-			<span class="propertyName">Category</span> <span class="propertyValue"><a>Pistols</a></span>
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Fire</a></span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Bullet</span>
+			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Lit Matches</span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi-Automatic</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Spread</span> <span class="propertyValue">Low</span>
+			<span class="propertyName">Spread</span> <span class="propertyValue">Medium</span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Direction</span> <span class="propertyValue">Straight</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Range</span> <span class="propertyValue">16 tiles</span>
+			<span class="propertyName">Range</span> <span class="propertyValue">1-2 tiles</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
+			<span class="propertyName">Capacity</span> <span class="propertyValue">20</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
+			<span class="propertyName">Console Name</span> <span class="propertyValue">matchbox</span>
 		</div>
+	</div>
+
+	<div class="bugs">
+		<p class="bugs-title">Bugs</p><p>Fire particles spawned by the Matchbox can spawn inside its collision box sometimes heating it up and explode on the player firing it, making it randomly explode when used.</p>
 	</div>
 </body>
 
@@ -90,7 +94,7 @@
 	top: 180px;
 }
 .page {
-	width: 30%;
+	width: 25%;
 	padding: 10px;
 	position: relative;
 	color:white;
@@ -135,6 +139,27 @@
 	left: 1070px;
 	width: 43%;
 	text-align: center;
+}
+
+.bugs-title {
+	border-bottom: 1px solid rgb(30, 30, 30);
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.bugs {
+	color: white;
+	font-size: 18px;
+	font-family: Consolas;
+	position: absolute;
+	top: 780px;
+	left: 1090px;
+	width: 41%;
+	text-align: center;
+}
+.bugs p {
+	padding-top: 5px;
 }
 
 .frame {

@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Duck Game Wiki | Pistol</title>
+		<title>Duck Game Wiki | Bazooka</title>
 		<link rel="icon" type="image/icon" href="/images/icon.ico">
 	</head>
 <body>
@@ -12,49 +12,53 @@
 	</div>
 
 	<div class="title">
-		<TitleThing>Pistol</TitleThing>
+		<TitleThing>Bazooka</TitleThing>
 	</div>
 	<div class="frame">
 		<img src="/images/arcadeframe.png">
 		<video autoplay loop muted playsinline width="1980" height="720">
-			<source src="/videos/Pistol.mp4" type="video/mp4" />
+			<source src="/videos/Bazooka.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
 
 	<div class="info">
-		<p>The Pistol is one of the most common and versatile weapons in Duck Game. Possessing average stats in every category makes the pistol effective on nearly every map. Many maps, especially pyramid maps have a pistol in them as a standard weapon. The recoil is manageable but may cause accidental deaths when spamming near edges.</p>
+		<p>The Bazooka is a projectile weapon. A fired rocket can kill directly or by splash damage on impact. While reloading the weapon, the player is unable to move, and the reload cannot be cancelled by normal means. There are a few ways to cancel it though: being disarmed by a throwable object, dying, getting hit by a net gun camping gun magnet gun or dart, and the ground beneath you disappearing. Splash damage has a range of 2-3 blocks and destroys any block except for Grey Blocks or Framework Blocks. Destroying the environment can be used to access other areas of the map which are not normally accessible. The fired rocket moves at 26.25 blocks per second. <br> <br> The Bazooka has a 2 second reload time but repeatedly pressing the fire button while reloading will shorten the time depending on how fast you press the button, down to 0.4 seconds. </p>
 	</div>
 
 	<div class="tooltip">
-		<p><i>Your average everyday pistol. Just workin' to keep its kids fed, never bothered nobody. <br> <br> Old faithful, the 9MM pistol.</i></p>
+		<p><i>Funny name, serious firepower. Launches an explosive missile that can destroy terrain.</i></p>
 	</div>
 
 	<div class="page">
 		<div class="ItemProperty">
-			<span class="propertyName">Category</span> <span class="propertyValue"><a>Pistols</a></span>
+			<span class="propertyName">Category</span> <span class="propertyValue"><a>Explosives</a></span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Bullet</span>
+			<span class="propertyName">Ammo Type</span> <span class="propertyValue">Rocket</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Semi-Automatic</span>
+			<span class="propertyName">Firing Mode</span> <span class="propertyValue">Fire & Reload</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Spread</span> <span class="propertyValue">Low</span>
+			<span class="propertyName">Spread</span> <span class="propertyValue">None</span>
 		</div>
 		<div class="ItemProperty">
 			<span class="propertyName">Direction</span> <span class="propertyValue">Straight</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Range</span> <span class="propertyValue">16 tiles</span>
+			<span class="propertyName">Range</span> <span class="propertyValue">53 tiles</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Capacity</span> <span class="propertyValue">9</span>
+			<span class="propertyName">Capacity</span> <span class="propertyValue">99</span>
 		</div>
 		<div class="ItemProperty">
-			<span class="propertyName">Console Name</span> <span class="propertyValue">pistol</span>
+			<span class="propertyName">Console Name</span> <span class="propertyValue">bazooka</span>
 		</div>
+	</div>
+
+	<div class="bugs">
+		<p class="bugs-title">Bugs</p><p>Entering a pipe while reloading will make you be able to move while its still reloading, turning around during this will play the raise up animation again and wont reload during that span.</p>
 	</div>
 </body>
 
@@ -90,7 +94,7 @@
 	top: 180px;
 }
 .page {
-	width: 30%;
+	width: 25%;
 	padding: 10px;
 	position: relative;
 	color:white;
@@ -135,6 +139,27 @@
 	left: 1070px;
 	width: 43%;
 	text-align: center;
+}
+
+.bugs-title {
+	border-bottom: 1px solid rgb(30, 30, 30);
+	text-align: center;
+	width: 100%;
+	font-size: 26px;
+	padding-bottom: 10px;
+}
+.bugs {
+	color: white;
+	font-size: 18px;
+	font-family: Consolas;
+	position: absolute;
+	top: 780px;
+	left: 1090px;
+	width: 41%;
+	text-align: center;
+}
+.bugs p {
+	padding-top: 5px;
 }
 
 .frame {
